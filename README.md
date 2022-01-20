@@ -61,7 +61,7 @@ https://www.opensnowmap.org/
 
 After extracting the weather data, the ski resort vistor data and review data, it wil be cleaned the using Jupyter Notebook (Python and Pandas), 
 the data will then be stored in a PostgreSQL database. This will allow for storage and compilation as the data is being extracted (year-by-year 
-and month-by-month). Further, once datahas been imported, additional transformations and tables can be created in order to isolate relevant data 
+and month-by-month). Further, once data has been imported, additional transformations and tables can be created in order to isolate relevant data 
 and export it for further use.
 
 ### Provisional Machine Learning Model 
