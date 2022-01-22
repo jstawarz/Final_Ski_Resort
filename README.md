@@ -101,7 +101,7 @@ stations were compared with the coordinates of the ski resorts. Filtering the da
 to the resort. The best fitting station was then recorded. 
 
 Once recorded, each station was serached in the NOAA website to request the data for each station. Each station's weather records were then reviewed to
-determine whether they cover the entrie period of interest. Following this, six resorts with full data were identified, Bridger, Discovery, Red Lodge,
+determine whether they cover the entire period of interest. Following this, six resorts with full data were identified, Bridger, Discovery, Red Lodge,
 Showdown, Snowbowl and Whitefish. These locations also represent the four regions of Montana that host ski resorts. Therefore, we feel that these
 resorts offer a strong representation of resorts in teh state.
 
@@ -130,15 +130,19 @@ additional transformations and tables can be created in order to isolate relevan
 
 Status - Warren will be working over the next week to create a Postgres database and set up the ERD. 
 
-### Machine Learning Model 
+### Machine Learning Model - NLP
+## NLP Classification
 
-Expanding on the Machine Learning model, Fabiana is working to develop a NLP model to parse the review data. Fabiana has developed a provisional model
-and will be working with the team over the weekend to troubleshoot the model and begin the asscoiated data analysis.
+Thwe team is working to create an NLP (Natural Language processing) Model using average weather data, and text review data, to provide insights for optmization ski resorts experiences.
 
-The team is also working to brainstorm potential regression models to make predictions for future ski visits.
+#### Process
+*Collect text review data
+*Cleaning and creating a new dataframe
+*Nomalizing process
+*Tokenization 
+*Stop word removal
 
-Using past weather, vistor and review data, the team will utilize Machine Learning with timeseries data and the ARIMA model to perform trend analysis
-and predict future ski visits to the resorts of interest. 
+For the data process we will use SpaCy, an annotation tool to enable a fast level of iteration to work on entity recognition and intent detection for language classification.
 
 ### Results (Provisional)
 
