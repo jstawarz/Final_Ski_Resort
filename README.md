@@ -171,7 +171,7 @@ Another possibility is that the word choices between positive and negative revie
 
 
 This image shows the ML sentiment analysis (by ski resort and review site)
-![Sentiment analysis posi_neg_site](https://user-images.githubusercontent.com/88170636/151736324-1984d63b-76b7-49b7-92c7-1a5d4d54664f.png)
+![Screenshot (315)](https://user-images.githubusercontent.com/88170636/151276028-8372d1ef-1846-4d67-806b-6506c79f1162.png)
 
 The plot image ilutrates, positive and negative words as a result from the ML- Natural Language processing model 
 ![newplot](https://user-images.githubusercontent.com/88170636/151737174-f12e63ea-4b9d-46c7-8529-a9be8f6ae15b.png)
@@ -192,10 +192,6 @@ The trend of sum of Visits for Years.  Color shows details about Resort. The dat
 
 ![Trend of sum of visits for years negative words](https://user-images.githubusercontent.com/88170636/151739618-61b3a436-b09b-4972-9394-3af4bb93e07d.png)
 
-
-Image bellow demonstrate results of ML model Sentimental analysis
-
-![Screenshot (315)](https://user-images.githubusercontent.com/88170636/151276028-8372d1ef-1846-4d67-806b-6506c79f1162.png)
 
 
 Fabiana has begun working with Tableau and has set up a dashboard as she works to create visualizations with the data collected. Over the next week, she will continue to work on the visualizations. 
