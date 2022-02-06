@@ -210,7 +210,9 @@ Image bellow demonstrate results of ML model Sentimental analysis
 ![Screenshot (315)](https://user-images.githubusercontent.com/88170636/151276028-8372d1ef-1846-4d67-806b-6506c79f1162.png)
 
 
-Fabiana has begun working with Tableau and has set up a dashboard as she works to create visualizations with the data collected. Over the next week, she will continue to work on the visualizations. 
+Another visual of the NLP results in negative and positive words created using Google Colab
+
+![Wordplot2](https://user-images.githubusercontent.com/88170636/152706654-19bc6918-2956-4f5f-87b1-04296233a911.png)
 
 Together, the team will be updating the slide deck and brainstorming a storyboard to present the analysis completed and present a cohesive conclusion to the ski resorts.
 
