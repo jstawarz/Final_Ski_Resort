@@ -1,6 +1,6 @@
 # Ski Resort Analysis Final Project
 
-## Second Segement - Status Update
+## Third Segment
 
 ### Selected Topic
 
