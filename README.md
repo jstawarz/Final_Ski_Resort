@@ -179,7 +179,7 @@ Building on this, there are additional ways to further refine and improve the NL
 With the word counts, statistical analysis can be performed to demonstrate which words in particular are most likely to appear in positive and negative reviews. The probability of these instances could provide insight into what factors contribute to a positive customer experience or a negative one. 
 
 
-### Results (Provisional)
+### Results
 
 
 This image shows the ML sentiment analysis (by ski resort and review site)
