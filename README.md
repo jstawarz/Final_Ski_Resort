@@ -1,6 +1,5 @@
 # Ski Resort Analysis Final Project
 
-## Third Segment
 
 ### Selected Topic
 
@@ -122,14 +121,6 @@ Regarding the correlation analysis of the weather and the ratings, no weather va
 
 <img width="740" alt="rating_correlation_matrix" src="https://user-images.githubusercontent.com/89322009/152014051-9ecdf01a-6805-4c6f-a7c2-91703005b3fc.png">
 
-### Slide Deck 
-
-A link to a provisional slide deck has been included below. As other portions of the analysis are completed, the slide deck will be updated to reflect
-current progress. 
-
-https://docs.google.com/presentation/d/1go-QYN6CNEwFXcEdnOdftVuREbx8iUtQk8BwkA_2T6s/edit?usp=sharing 
-
-Currently, Fabiana has updated the slides with the current work completed. During the upcoming week, the team will have updated the slide deck with information regarding their respective portions.
 
 ### Database Integration
 
@@ -215,6 +206,12 @@ Another visual of the NLP results in negative and positive words created using G
 ![Wordplot2](https://user-images.githubusercontent.com/88170636/152706654-19bc6918-2956-4f5f-87b1-04296233a911.png)
 
 Together, the team will be updating the slide deck and brainstorming a storyboard to present the analysis completed and present a cohesive conclusion to the ski resorts.
+
+### Slide Deck 
+
+A link to the slide deck has been included below.
+
+https://docs.google.com/presentation/d/1go-QYN6CNEwFXcEdnOdftVuREbx8iUtQk8BwkA_2T6s/edit?usp=sharing 
 
 
 ### The Team 
