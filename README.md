@@ -235,7 +235,7 @@ Our receommendation at the end of this analysis is to continue furhter developme
 
 Outside of pulling in more reviews from third-party websites, one possibility could be for resorts to incentivize customers to leave reviews, possibily offering them discounts on future lift passes or lodge accomodations. 
 
-With additional review data, the NLP models can also be expanded. One possibility is to create an n-gram model, in which phrases, instead of individual words are tokenized. This potential model could help better understand the context of the user reviews and identify trends in both positive and negative user experience. 
+With additional review data, the NLP models can also be expanded. One possibility is to create an n-gram model, in which phrases, instead of individual words are tokenized. This potential model could help better understand the context of the user reviews and identify trends in both positive and negative user experience. Once a model was deployed, a resort could work to gather customer feedback, through forms or data collection and run the information through the updated model. The model could then predict whether that customer's experience was positive or negative based on the feedback given.
 
 Lastly, the resorts could begin with the insights from the word analysis to focus on capitalizing on competitive advantages or improving weaknesses. For example, one word that was unique to negative reviews was "rental". This could suggest that users are having negative experiences with resorts' rental equipment. Furhter investigation into the specifics would be required, but could help a resort understand a aspect of their business that needs attention. 
 
