@@ -208,6 +208,25 @@ Another visual of the NLP results in negative and positive words created using G
 
 Together, the team will be updating the slide deck and brainstorming a storyboard to present the analysis completed and present a cohesive conclusion to the ski resorts.
 
+
+### Results Summary
+
+### Challenges
+
+Over the course of the project, the team expereinced three key challenges: access to data, implementation of the Natural Language Processing and time. 
+
+First and foremost, access to robust data sources on the selected topic were difficult to locate. Regarding the vistor data, the team worked with yearly season totals of ski visitors at a particular resort. However, as the analysis progressed more granular data about the visitors and their use of the resort was highly desired. For example, demographic data points, trip duration, amount of runs taken, which trails are most frequented, what time of the season sees the most vistors, etc. 
+
+The weather data itself posed a challenge as well. In it's intial state, the weather measurements were taken across nearly 30 years and amounted to thousands of data points that needed to be filtered down to a specific timeframe of interest. Further challenges with this data included, missing data points or variations in how certain weather conditions were measured. For example, some weather stations consistently recorded daily precipitation, or snowfall levels, while others relied almost entirely on snow depth. This created challenges in determining which statistics were best to use across all the data gathered in order to maintain a level of consistency in the analysis. 
+
+Second main challenge for the team was the implementation of the Natural Language Processing. For us, the concept was relatively foreign and a large amount of the learning had to happen on the fly. Ultimately, a working model was created, however, in retrospect, the NLP desevered more attention overall as the outputs (and potential outputs) outweighed results or insights gleaned from the weather and visitor data. 
+
+Overall, time in and of itself was an overarching force compounding both of these challenges. The time taken to clean and...
+
+
+### Recommendations 
+
+
 ### Slide Deck 
 
 A link to the slide deck has been included below.
