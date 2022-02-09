@@ -1,0 +1,102 @@
+CREATE TABLE regions (
+	region_id INT NOT NULL,
+	region_name VARCHAR NOT NULL,
+	PRIMARY KEY (region_id)
+);
+
+CREATE TABLE weather_stations(
+	station_id VARCHAR NOT NULL,
+	station_name VARCHAR NOT NULL,
+	Elevation VARCHAR NOT NULL,
+	PRIMARY KEY (station_id)
+);
+
+CREATE TABLE weather_data (
+	region_id INT NOT NULL,
+	station_id VARCHAR NOT NULL,
+	"name" VARCHAR NOT NULL,
+	"date" DATE NOT NULL,
+	snow_fall VARCHAR NULL,
+	snow_dept VARCHAR NULL,
+	max_temperature VARCHAR NULL,
+	min_temperature VARCHAR NULL,
+	FOREIGN KEY (region_id) REFERENCES regions (region_id),
+	FOREIGN KEY (station_id) REFERENCES weather_stations (station_id)
+);
+
+CREATE TABLE ski_resorts (
+	region_id INT NOT NULL,
+	resort_id INT NOT NULL,
+	resort_name VARCHAR NOT NULL,
+	city VARCHAR NOT NULL,
+	"state" VARCHAR NOT NULL,
+	longitude VARCHAR NOT NULL,
+	latitude VARCHAR NOT NULL,
+	FOREIGN KEY (region_id) REFERENCES regions (region_id),
+	PRIMARY KEY (resort_id)
+);
+
+CREATE TABLE reviews (
+	resort_id INT NOT NULL,
+	reviews_id INT NOT NULL,
+	review_site VARCHAR NOT NULL,
+	review_date VARCHAR NULL,
+	"class" VARCHAR NOT NULL,
+	review_rating VARCHAR NOT NULL,
+	FOREIGN KEY (resort_id) REFERENCES ski_resorts (resort_id),
+		PRIMARY KEY (reviews_id)
+);
+
+CREATE TABLE resort_visits (
+	resort_id INT NOT NULL,
+	visits_id INT NOT NULL,
+	resort_name varchar NOT NULL,
+	city VARCHAR NOT NULL,
+	"state" VARCHAR NOT NULL,
+	years VARCHAR NOT NULL,
+	total_visits VARCHAR NOT NULL,
+	FOREIGN KEY (resort_id) REFERENCES ski_resorts (resort_id),
+		PRIMARY KEY (visits_id)
+);
+
+SELECT count(*) FROM weather_data
+WHERE date between'2000-01-01' and '2021-12-31';
+
+SELECT region_id, station_id, "name", "date", snow_fall, snow_dept, max_temperature, min_temperature
+INTO new_weather_data
+FROM weather_data
+WHERE date between '2000-01-01' and '2021-12-31'
+
+SELECT ski_resorts.region_id, ski_resorts.resort_id, ski_resorts.resort_name, ski_resorts.city,
+ski_resorts.state, ski_resorts.longitude, ski_resorts.latitude,resort_visits.years,resort_visits.total_visits
+INTO ski_resort_visits
+FROM ski_resorts
+LEFT JOIN resort_visits
+ON ski_resorts.resort_id = resort_visits.resort_id;
+
+SELECT * INTO new_weather_data
+FROM master_file_weather_data
+WHERE "date" between '2000-01-01' and '2021-12-31';
+
+ALTER TABLE master_file_weather_data
+ALTER COLUMN "date" type date using date::date;
+
+SELECT ski_resorts.region_id, ski_resorts.resort_id, ski_resorts.resort_name, ski_resorts.city, ski_resorts.state,
+ski_resorts.longitude, ski_resorts.latitude,resort_visits.years,resort_visits.total_visits
+INTO ski_resort_visits
+FROM ski_resorts
+LEFT JOIN resort_visits
+ON ski_resorts.resort_id = resort_visits.resort_id;
+
+SELECT new_weather_data.region_id, new_weather_data.date, new_weather_data.snow_dept,
+new_weather_data.max_temperature, new_weather_data.min_temperature, new_weather_data.snow_fall
+INTO modified_weather_data
+FROM new_weather_data;
+
+
+
+
+
+
+
+
