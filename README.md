@@ -221,7 +221,7 @@ The weather data itself posed a challenge as well. In it's intial state, the wea
 
 Second main challenge for the team was the implementation of the Natural Language Processing. For us, the concept was relatively foreign and a large amount of the learning had to happen on the fly. Ultimately, a working model was created, however, in retrospect, the NLP desevered more attention overall as the outputs (and potential outputs) outweighed results or insights gleaned from the weather and visitor data. 
 
-Overall, time in and of itself was an overarching force compounding both of these challenges. The time taken to clean and 
+Overall, time in and of itself was an overarching force compounding both of these challenges. The time taken to clean and analyze the weather could have been better spent on developing furhter uses and sources of data for the machine learning model. 
 
 
 ### Recommendations 
