@@ -165,11 +165,12 @@ Using the Binary Classification Evaluator, the prediction and length values are 
 
 In its current state, the model is not ready for deployment as the accuracy level is relatively low. A first step in solving this could be to input additional sources of review data. Having more raw text data could give the model more to work with and allow it to draw better conclusions regarding the sentiment of the review text. This could also reflect some of the current limitations in sentiment analysis. One of the most prominent is that computers are not perfect in understanding the context of a text. Sarcasm, subtext and implied messages can be difficult for the model to capture and accurately reflect. For example, a 1 star review such as, "Do not go to this resort". After tokenization and stop words are removed, the only remaining word is "resort". This could lead the model to belive that the word "resort" is associated with negative reviews. However, we as humans know that the word, "resort" is likely to appear in many reviews, regardless of the sentiment becuase that is the subject of the review itself. 
 
-
 Building on this, there are additional ways to further refine and improve the NLP model created. Libraries such as SpaCy and NLTK allow for stop words to be extended, in order to remove common words that appear across a wide portion of reviews, regardless of sentiment. To futher explore and evaluate this possibility, the reviews were split into two separate spreadsheets, one containing only positive reviews and others containing only negative. Using Google Collaboratory the reviews were imported and using SpaCy, the review text was tokenized. Using a word counting function, the individual tokens were counted. Then, with Pandas, the word counts were put into a dataframe and exported for further evaluation. This model is most similar to bag-of-words, which analyzes the text on how frequently the words appear. 
 
-With the word counts, statistical analysis can be performed to demonstrate which words in particular are most likely to appear in positive and negative reviews. The probability of these instances could provide insight into what factors contribute to a positive customer experience or a negative one. 
+<img width="808" alt="Screen Shot 2022-02-09 at 4 45 03 PM" src="https://user-images.githubusercontent.com/89322009/153295390-079ee952-6e92-4447-a8da-30ccb29fc6ce.png">
 
+
+With the word counts, statistical analysis can be performed to demonstrate which words in particular are most likely to appear in positive and negative reviews. The probability of these instances could provide insight into what factors contribute to a positive customer experience or a negative one. 
 
 ### Visualizations
 
@@ -211,6 +212,10 @@ Together, the team will be updating the slide deck and brainstorming a storyboar
 
 ### Results Summary
 
+With regard to the weather and visitor data, the statistical analysis revealed that higher average snow depth levels correlated to lower seasonal attendence at resorts, while higher average daily temperatures reflected higher visitor counts. The result of this analysis suggests that weather conditions at least have an impact on the amount of visitors that a resort receives. However, as the r-squared values note, these factors only account for about 30% of the variability in the visitor levels, so utilizing them to make predicitve analysis is premature. 
+
+Instead, the team forged ahead with investigating how these weather elements played a role in a specific user's experience. When the review data was analyzed in conjuction with the weather data, it was found that the weather at the resort did not reveal a significant impact on a user's rating. To furhter investigate the factors that did then play a part in shaping a user's experience and rating, the Natural Language Processing machine learning model was developed. The results of the bag-of-words model revealed certain words that frequently appeared in ratings both positive and negative. Some of these words, ski, mountain, runs, lift, etc. can help us better understand what factors are important to a user's experience. 
+
 ### Challenges
 
 Over the course of the project, the team expereinced three key challenges: access to data, implementation of the Natural Language Processing and time. 
@@ -225,6 +230,14 @@ Overall, time in and of itself was an overarching force compounding both of thes
 
 
 ### Recommendations 
+
+Our receommendation at the end of this analysis is to continue furhter development of the NLP model. The model in its current state would benefit from more review data, so that more refined relationships can be defined between the individual words and the overal sentiment of the review. Ultimately, the goal for the resorts would be to amass enough individual reviews that the model could be replicated for each resort with only reviews from that resort. That way, the analysis from the bag-of-words model could be specific to each resort and offer more individualized outputs and insights. 
+
+Outside of pulling in more reviews from third-party websites, one possibility could be for resorts to incentivize customers to leave reviews, possibily offering them discounts on future lift passes or lodge accomodations. 
+
+With additional review data, the NLP models can also be expanded. One possibility is to create an n-gram model, in which phrases, instead of individual words are tokenized. This potential model could help better understand the context of the user reviews and identify trends in both positive and negative user experience. 
+
+Lastly, the resorts could begin with the insights from the word analysis to focus on capitalizing on competitive advantages or improving weaknesses. For example, one word that was unique to negative reviews was "rental". This could suggest that users are having negative experiences with resorts' rental equipment. Furhter investigation into the specifics would be required, but could help a resort understand a aspect of their business that needs attention. 
 
 
 ### Slide Deck 
